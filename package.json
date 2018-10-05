@@ -1,5 +1,37 @@
 {
   "dependencies": {
-    "webpack": "^4.20.2"
-  }
+    "mini-css-extract-plugin": "^0.4.3",
+    "uglify": "^0.1.5",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
+  },
+  "name": "webpack",
+  "description": "配置webpack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "css-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.23.0",
+    "uglify-js": "^3.4.9",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  },
+  "scripts": {
+    "build": "webpack --config=config/webpack.dev.js",
+    "server": "webpack-dev-server --config=config/webpack.dev.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Han1128/webpack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Han1128/webpack/issues"
+  },
+  "homepage": "https://github.com/Han1128/webpack#readme"
 }

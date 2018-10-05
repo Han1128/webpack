@@ -1,0 +1,12 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+h1{
+	color: red;
+}
+.img{
+	background-image: url(../images/1.png);
+	width: 800px;
+	height: 500px;
+}
