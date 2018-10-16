@@ -6,7 +6,6 @@ const extractTextPlugin = require("extract-text-webpack-plugin")
 
 var website ={
     publicPath:"http://localhost:8888/"
-    // publicPath:"http://192.168.1.103:8888/"
 }
 
 module.exports = {

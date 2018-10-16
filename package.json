@@ -11,6 +11,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {
+    "commitizen": "^3.0.2",
+    "conventional-changelog": "^2.0.3",
+    "conventional-changelog-cli": "^2.0.5",
     "css-loader": "^1.0.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "html-webpack-plugin": "^3.2.0",
@@ -22,7 +25,13 @@
   "scripts": {
     "build": "webpack --config=config/webpack.dev.js",
     "server": "webpack-dev-server --config=config/webpack.dev.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "git add . && git-cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   },
   "repository": {
     "type": "git",
@@ -33,5 +42,6 @@
   "bugs": {
     "url": "https://github.com/Han1128/webpack/issues"
   },
-  "homepage": "https://github.com/Han1128/webpack#readme"
+  "homepage": "https://github.com/Han1128/webpack#readme",
+  "keywords": []
 }
